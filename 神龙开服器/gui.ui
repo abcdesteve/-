@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gui</class>
+ <widget class="QMainWindow" name="gui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>HarmonyOS Sans SC</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>神龙开服器</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_java">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>13</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>java版本：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_java">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>13</y>
+      <width>291</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_version">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>291</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_version">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>游戏版本：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_map">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>291</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_map">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>游戏地图：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="check_mod">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>90</y>
+      <width>111</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>启用模组(×)</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_launch">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>210</y>
+      <width>92</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>启动服务器</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_tunnel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>210</y>
+      <width>92</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>开启隧道</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="ram">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>170</y>
+      <width>81</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="prefix">
+     <string/>
+    </property>
+    <property name="suffix">
+     <string>GB</string>
+    </property>
+    <property name="decimals">
+     <number>1</number>
+    </property>
+    <property name="minimum">
+     <double>0.100000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>16.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.100000000000000</double>
+    </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::DefaultStepType</enum>
+    </property>
+    <property name="value">
+     <double>0.500000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ram">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>最大内存：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_flash">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>170</y>
+      <width>41</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>刷新</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
